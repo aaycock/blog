@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno'
+title: Aaron Aycock
+description: 'Building new things'
+url: 'https://aaycock.github.io/blog'
+baseurl: '/blog'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Aaron Aycock'
+  email: aaron.aycock@gmail.com
+  twitter_username: aaronaycock
+  # facebook_username: joshgerdes
+  github_username:  aaycock
+  linkedin_username:  aaronaycock
 
 defaults:
   -
