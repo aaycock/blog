@@ -9,9 +9,9 @@ baseurl: '/blog'
 author:
   name: 'Aaron Aycock'
   email: aaron.aycock@gmail.com
-  twitter_username: aaronaycock
+  #twitter_username: aaronaycock
   # facebook_username: joshgerdes
-  github_username:  aaycock
+  #github_username:  aaycock
   linkedin_username:  aaronaycock
 
 defaults:
