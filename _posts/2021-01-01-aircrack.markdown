@@ -1,0 +1,31 @@
+---
+title:  "Capturing EAPOL Frames to Crack a PSK"
+date:   2021-01-01 08:09:23
+categories: [ruckus, wifi]
+tags: [security, wifi]
+---
+
+As a Wi-Fi professional, it is important to understand the tools used by bad actors to attack your networks. In this post, I'm going to show you how easy it is to crack a PSK using open source tools and a dictionary of potential passphrases. Hopefully, this will illustrate why PSK-based security may not be sufficient and why 802.1x measures should be considered in sensitive environments.
+
+First, you'll need to capture specific 802.11 packets on the network by [putting your adapter into monitor mode][monitor].
+
+We are looking for EAPOL packets. Once monitor mode is enabled, you can capture the packets you need with the following:
+```
+tcpdump -lw /tmp/packet.cap -Z root -i mon0 ether proto 0x888e or type mgt
+```
+
+You must capture the entire 4-way handshake process in order to proceed.
+
+Once you have the capture, you can use `aircrack-ng` to compare the PSK used to a dictionary of potential passphrases. 
+
+```
+aircrack-ng /tmp/packet.cap -w /tmp/list -l /tmp/output.key -e PiFi-MAC
+```
+
+If the passphrase is in the dictionary, it will be found:
+
+![aircrack-output](/blog/images/aircrack.png)
+
+Hopefully this post illustrates why you should carefully consider the strength of security in your Wi-Fi network. At a minimum, be sure to avoid commonly used passphrases if you intend to block unauthorized users. Better yet, implement certificate-based, 802.1x security measures to secure your network.
+
+[monitor]: /blog/2021/monitor-mode/
