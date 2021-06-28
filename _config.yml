@@ -1,7 +1,7 @@
 # Site settings
 title: Aaron Aycock
 description: 'All things wirless'
-url: 'https://aaycock.github.io/blog'
+url: 'https://blog.aaronaycock.com'
 baseurl: '/blog'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
