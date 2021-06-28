@@ -99,6 +99,6 @@ Now connect to your new Pi-Fi WLAN. Once the 4-way handshake is complete, you ar
 wlan0: STA f0:18:98:17:1c:8e WPA: pairwise key handshake completed (RSN)
 ```
 
-![Pi-Fi WLAN Details](/blog/images/Pi-fi.png)
+![Pi-Fi WLAN Details](/images/Pi-fi.png)
 
 In order to see this extra detail on a Mac, hold down the **⌥ Option** key when clicking on the Wi-Fi symbol in top menu bar.

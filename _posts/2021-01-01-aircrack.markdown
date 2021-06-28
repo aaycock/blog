@@ -24,8 +24,8 @@ aircrack-ng /tmp/packet.cap -w /tmp/list -l /tmp/output.key -e PiFi-MAC
 
 If the passphrase is in the dictionary, it will be found:
 
-![aircrack-output](/blog/images/aircrack.png)
+![aircrack-output](/images/aircrack.png)
 
 Hopefully this post illustrates why you should carefully consider the strength of security in your Wi-Fi network. At a minimum, be sure to avoid commonly used passphrases if you intend to block unauthorized users. Better yet, implement certificate-based, 802.1x security measures to secure your network.
 
-[monitor]: /blog/2021/monitor-mode/
+[monitor]: /2021/monitor-mode/

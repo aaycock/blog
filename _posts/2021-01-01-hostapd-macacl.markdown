@@ -107,8 +107,8 @@ hostapd -dd /etc/hostapd/hostapd.conf
 
 **Update:** I now have a [working DPSK configuration][config-dpsk] on the Pi.
 
-[install-hostapd]: /blog/2021/pifi-access-point/
-[config-dpsk]: /blog/2021/hostapd-dpsk/
+[install-hostapd]: /2021/pifi-access-point/
+[config-dpsk]: /2021/hostapd-dpsk/
 [atheros]: https://www.amazon.com/dp/B07FVRKCZJ?psc=1&ref=ppx_yo2_dt_b_product_details
 [alfa]: https://www.amazon.com/dp/B00MX57AO4?psc=1&ref=ppx_yo2_dt_b_product_details
 [comfast]: https://www.amazon.com/Comfast-CF-912AC-1200MBPS-Realtek-Network/dp/B01KX1M436/ref=sr_1_3?dchild=1&keywords=Comfast+CF-912AC&qid=1624857028&s=electronics&sr=1-3

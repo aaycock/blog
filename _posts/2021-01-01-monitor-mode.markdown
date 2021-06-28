@@ -41,4 +41,4 @@ tcpdump -i mon0 -e -s 0 -l type mgt
 
 There are some interesting things you can do when capturing management frames, including [cracking a PSK with a dictionary attack][aircrack].
 
-[aircrack]: /blog/2021/aircrack/
+[aircrack]: /2021/aircrack/

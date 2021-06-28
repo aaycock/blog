@@ -14,7 +14,7 @@ Once you have completed all the steps to enable RADIUS-based MAC auth, there are
 On the RADIUS server, you will need to return `Tunnel-Password` attribute in the accept response. The details for this attribute can be found in [RFC 2868][rfc]
 
 On the rXg, it looks like this:
-<img src="/blog/images/tunnel-password.png">
+<img src="/images/tunnel-password.png">
 
 On the Pi, you will need to add a line to your hostapd.conf:
 ```
@@ -39,8 +39,8 @@ Now connect to your new DPSK-enabled WLAN.
 
 On an iPhone, it should look like this for your WLAN settings:
 
-<img src="/blog/images/random-mac.jpg" width="400">
+<img src="/images/random-mac.jpg" width="400">
 
-[mac-auth]: /blog/2021/hostapd-macacl/
-[dvlan]: /blog/2021/hostapd-dvlan/
+[mac-auth]: /2021/hostapd-macacl/
+[dvlan]: /2021/hostapd-dvlan/
 [rfc]: https://datatracker.ietf.org/doc/html/rfc2868#section-3.5

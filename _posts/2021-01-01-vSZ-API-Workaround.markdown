@@ -66,7 +66,7 @@ I wasn't sure if it was related at first, but I was able to reproduce it on-dema
 
 The `getRadio50` method is the clue we are looking for. There is an empty string where a value is expected. These are the radio50 settings for the **AP group** we are looking for:
 
-  ![vsz-toggle](/blog/images/vsz-toggle.png)
+  ![vsz-toggle](/images/vsz-toggle.png)
 
 To force a value, I toggled the settings to override, hit save, then toggled them back, and hit save again.
 
