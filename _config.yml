@@ -1,8 +1,8 @@
 # Site settings
 title: Aaron Aycock
-description: 'All things wirless'
+description: 'All things Wi-Fi and IoT'
 url: 'https://blog.aaronaycock.com'
-baseurl: '/blog'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
