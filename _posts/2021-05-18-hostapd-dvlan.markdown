@@ -59,7 +59,7 @@ Then, create a static mapping to the VLANs in your accept.conf file:
 <MAC 3> 102
 ```
  
-Finally, you'll need to update your hostapd.conf file to enable VLAN support:
+Next, you'll need to update your hostapd.conf file to enable VLAN support:
 ```
 bridge=br0 
 country_code=US 
