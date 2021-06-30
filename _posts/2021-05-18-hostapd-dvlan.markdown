@@ -84,12 +84,12 @@ per_sta_vif=1
 dynamic_vlan=0
 ```
 
-Now start your WLAN and confirm proper VLAN tagging.
+Start your WLAN and confirm proper VLAN tagging.
 
 
 **Note:** If your Pi is connected via switch, be sure to enable the VLANs appropriately.
 
 
-Now, to enable dynamic VLANs, set `dynamic_vlan=1`, `macaddr_acl=2` and be sure that RADIUS returns `Tunnel-Private-Group-ID` which will determine the VLAN ID.
+Finally, to enable dynamic VLANs, set `dynamic_vlan=1`, `macaddr_acl=2` and be sure that RADIUS returns `Tunnel-Private-Group-ID` which will determine the VLAN ID.
 
 
