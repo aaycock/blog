@@ -45,35 +45,46 @@ cp ./hostapd /usr/sbin/hostapd
 
 
 Test
-
-First, you'll need to update your hostapd.conf file to enable an 802.11ac WLAN:
+First, define your vlans in a hostapd.vlan file:
 ```
-bridge=br0
-country_code=US
-interface=wlan1
-driver=nl80211
-ssid=pies
-ignore_broadcast_ssid=0
-ieee80211d=1
-hw_mode=a
-ieee80211n=1
-require_ht=1
-ieee80211ac=1
-require_vht=1
-vht_oper_chwidth=1
-channel=36
-vht_oper_centr_freq_seg0_idx=42
-ht_capab=[HT40+][SHORT-GI-20][SHORT-GI-40][DSSS_CCK-40][MAX-AMSDU-3839]
-vht_capab=[MAX-MPDU-3895][SHORT-GI-80][SU-BEAMFORMEE]
-# WPA stuff
-wpa=2
-auth_algs=1
-wpa_key_mgmt=WPA-PSK
-rsn_pairwise=CCMP
-wpa_pairwise=CCMP
-wpa_passphrase=piespies
-wmm_enabled=1
+wlan1.100
+wlan1.101
+wlan1.102
 ```
 
-Now start your WLAN and check the details:
+Then, create a static mapping to the VLANs in your accept.conf file:
+```
+<MAC 1> 100
+<MAC 2> 101
+<MAC 3> 102
+```
+ 
+Finally, you'll need to update your hostapd.conf file to enable VLAN support:
+```
+bridge=br0 
+country_code=US 
+interface=wlan1 
+ssid=vlantest
+hw_mode=g 
+channel=11 
+ignore_broadcast_ssid=0 
+# WPA stuff                                                                              
+wpa=2 
+auth_algs=1 
+wpa_key_mgmt=WPA-PSK 
+rsn_pairwise=CCMP 
+wpa_pairwise=CCMP 
+wpa_passphrase=vlantest
+wmm_enabled=0 
+macaddr_acl=1 
+accept_mac_file=/etc/hostapd/accept.conf 
+vlan_file=/etc/hostapd/hostapd.vlan 
+vlan_tagged_interface=eth0 
+per_sta_vif=1 
+dynamic_vlan=0
+```
+
+Now start your WLAN and confirm proper VLAN tagging.
+
+**Note:** If your Pi is connected via switch, be sure to enable the VLANs appropriately.
 
