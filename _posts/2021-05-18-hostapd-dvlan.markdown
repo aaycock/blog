@@ -43,13 +43,13 @@ cp /usr/sbin/hostapd /usr/sbin/hostapd.orig
 cp ./hostapd /usr/sbin/hostapd
 ```
 
+To configure hostapd to assign static VLANs, follow these steps:
 
-Test
 First, define your vlans in a hostapd.vlan file:
 ```
-wlan1.100
-wlan1.101
-wlan1.102
+wlan1.100 eth0
+wlan1.101 eth0
+wlan1.102 eth0
 ```
 
 Then, create a static mapping to the VLANs in your accept.conf file:
@@ -86,5 +86,10 @@ dynamic_vlan=0
 
 Now start your WLAN and confirm proper VLAN tagging.
 
+
 **Note:** If your Pi is connected via switch, be sure to enable the VLANs appropriately.
+
+
+Now, to enable dynamic VLANs, set `dynamic_vlan=1`, `macaddr_acl=2` and be sure that RADIUS returns `Tunnel-Private-Group-ID` which will determine the VLAN ID.
+
 
