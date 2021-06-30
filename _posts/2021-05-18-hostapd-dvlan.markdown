@@ -1,6 +1,6 @@
 ---
 title:  "Adding Dynamic VLAN (DVLAN) support to hostapd"
-date:   2021-01-01 08:09:23
+date:   2021-05-18
 categories: [pi, wifi]
 tags: [pi, wifi]
 ---

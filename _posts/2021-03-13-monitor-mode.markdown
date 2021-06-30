@@ -1,11 +1,11 @@
 ---
 title:  "Monitor Management Frames on a Raspberry Pi"
-date:   2021-01-01 08:09:23
+date:   2021-03-13
 categories: [pi, security, wifi]
 tags: [pi, security, wifi]
 ---
 
-For an IoT project I'm working on, I recently needed to put a Raspberry Pi into monitor mode to capture management frames, specifically probe-requests. This had to be done while running as an access point with connected clients.
+For an IoT project I'm working on, I needed to put a Raspberry Pi into monitor mode to capture management frames, specifically probe-requests. This had to be done while running as an access point with connected clients.
 
 As you learn early on in CWNA curriculum, a Wi-Fi radio can only be in a single mode at any time, so in order to monitor for management frames without affecting connected clients, you will need at least 2 radios. 
 

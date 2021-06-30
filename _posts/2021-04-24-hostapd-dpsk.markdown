@@ -1,6 +1,6 @@
 ---
 title:  "Enabling dynamic PSK (DPSK) on hostapd"
-date:   2021-01-01 08:09:23
+date:   2021-04-24
 categories: [pi, wifi]
 tags: [pi, wifi]
 ---

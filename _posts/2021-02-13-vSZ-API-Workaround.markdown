@@ -1,6 +1,6 @@
 ---
 title:  "Virtual SmartZone (vSZ) API Workaround"
-date:   2021-01-01 08:09:23
+date:   2021-02-13
 categories: [ruckus, wifi]
 tags: [ruckus, wifi]
 ---

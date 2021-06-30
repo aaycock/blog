@@ -1,6 +1,6 @@
 ---
 title:  "Enabling RADIUS-based MAC ACL on hostapd"
-date:   2021-01-01 08:09:23
+date:   2021-05-15
 categories: [pi, wifi]
 tags: [pi, wifi]
 ---
@@ -55,15 +55,14 @@ If you pass incorrect credentials, you will be denied with the following message
 Received Access-Reject Id 74 from x.x.x.x:1812 to y.y.y.y:55076 length 35
 ```
 
-If you don't get either, and instead see 3 attempts with no response, you may need to troubleshoot your RADIUS server config or network path:
+If you don't get either, and instead see 3 attempts with no response, you may need to troubleshoot your RADIUS server config or network path.
 
-Troubleshooting
-If you are having trouble connecting to your RADIUS server to begin with, it may be helpful to watch the traffic to port 1812 with tcpdump. Run this on the server while you run the command line test above, substituting your actual interface.
+If you are having trouble connecting to your RADIUS server to begin with, it may be helpful to watch the traffic to port 1812 with tcpdump. Run the following on the server while you run the command line test above, substituting your actual interface.
 ```
 tcpdump -vnes0 -i igb0 port 1812
 ```
 
-
+Once you have a successful command line test, it is time to configure hostapd to enforce the MAC auth with a call to RADIUS.
  
 
 Edit your hostapd.conf file
@@ -92,9 +91,9 @@ auth_server_shared_secret=mysupersecret
 ```
 
 The key items in the hostapd.conf file are:
-* interface=wlan1 - Uses the external radio (e.g. Atheros) 
-* macaddr_acl=2 - Makes a call to RADIUS, passing MAC as username
-* auth_server_x - Config settings for your RADIUS server
+* **interface=wlan1** - Uses the external radio (e.g. Atheros) 
+* **macaddr_acl=2** - Makes a call to RADIUS, passing MAC as username
+* **auth_server_x** - Config settings for your RADIUS server
 
 **Note:** The auth_server_addr must be an IP address. I found passing a hostname did not work.
 
@@ -105,7 +104,7 @@ hostapd -dd /etc/hostapd/hostapd.conf
 ```
 
 
-**Update:** I now have a [working DPSK configuration][config-dpsk] on the Pi.
+Now that you have a working RADIUS-based MAC auth flow working, you can easily [enable a dynmaic PSK configuration][config-dpsk] on the Pi.
 
 [install-hostapd]: /2021/pifi-access-point/
 [config-dpsk]: /2021/hostapd-dpsk/

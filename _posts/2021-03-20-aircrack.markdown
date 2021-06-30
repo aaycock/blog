@@ -1,6 +1,6 @@
 ---
 title:  "Capturing EAPOL Frames to Crack a PSK"
-date:   2021-01-01 08:09:23
+date:   2021-03-20
 categories: [ruckus, wifi]
 tags: [security, wifi]
 ---
