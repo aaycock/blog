@@ -1,8 +1,8 @@
 ---
 title:  "Modifying HomeAssistant Supervisor to Support A Managed Bridge Device"
 date:   2021-07-02
-categories: [pi, wifi]
-tags: [pi, wifi]
+categories: [pi, wifi, iot, homeassistant]
+tags: [pi, wifi, iot, homeassistant]
 ---
 
 There are several scenarios where I find it helpful to establish a network bridge device that is managed by NetworkManager. For example, when running in managed mode to allow hostapd to automatically bring up the wlan interface, bridged to ```eth0```.
