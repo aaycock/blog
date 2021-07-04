@@ -7,7 +7,7 @@ tags: [pi, wifi]
 
 I ran into an interesting problem when trying to enable RADIUS-based MAC authorization on a Raspberry Pi running hostapd. It took a little experimentation, but I was able to eventually make it work. 
 
-The bad news is that I was not able to get and RADIUS-based MAC auth working with the onboard radio of the Raspberry Pi 4 (yet). You will need an external radio to support this. 
+The bad news is that I was not able to get RADIUS-based MAC auth working with the onboard radio of the Raspberry Pi 4 (yet). You will need an external radio to support this. 
 
 Here are a few models in my lab that are **working**:
 
