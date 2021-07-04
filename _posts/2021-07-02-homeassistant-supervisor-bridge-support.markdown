@@ -1,6 +1,6 @@
 ---
 title:  "Modifying HomeAssistant Supervisor to Support A Managed Bridge Device"
-date:   2021-06-18
+date:   2021-07-02
 categories: [pi, wifi]
 tags: [pi, wifi]
 ---
