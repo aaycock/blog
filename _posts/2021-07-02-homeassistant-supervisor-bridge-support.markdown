@@ -5,7 +5,7 @@ categories: [pi, wifi]
 tags: [pi, wifi]
 ---
 
-There are several scenarios where I find it helpful to establish a network bridge device that is managed by NetworkManager. For example, when running in managed mode to allow hostapd to automatically bring up the wlanx interface, bridged to ```eth0```.
+There are several scenarios where I find it helpful to establish a network bridge device that is managed by NetworkManager. For example, when running in managed mode to allow hostapd to automatically bring up the wlan interface, bridged to ```eth0```.
 
 This works great in a hostapd-only environment. However, if you plan to run [HomeAssistant][homeassistant] with the supervisor docker container, you will run into issues because HomeAssistant Supervisor does not officially support the bridge network device (yet).
 
