@@ -11,7 +11,7 @@ This works great in a hostapd-only environment. However, if you plan to run [Hom
 
 I've been working on a fix that I plan to PR in the homeassistant code base. Here are the details if you'd like to try.
 
-For this example, I'll assume you already have a working HomeAssistant install in place with Supervior installed. This example is taken from a Kali-based linux distro, but the docker steps should be consistent across platforms.
+For this example, I'll assume you already have a working HomeAssistant install in place with Supervisor installed. This example is taken from a Kali-based linux distro, but the docker steps should be consistent across platforms.
 
 SSH to instance
 ```

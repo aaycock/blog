@@ -5,9 +5,7 @@ categories: [pi, wifi]
 tags: [pi, wifi]
 ---
 
-The standard hostapd package installed by default using apt-get did not include dynamic VLAN support. I had to compile with a modified make config file to enable it.
-
-Support for this feature can be enabled by compiling hostapd with the appropriate feature flag enabled. Here are the steps:
+The standard hostapd package installed by default using apt-get did not include dynamic VLAN support. I had to compile hostapd with a modified make config with the appropriate feature flag to enable it. Here are the steps:
 
 Get required supporting libraries
 ```
