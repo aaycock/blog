@@ -19,7 +19,7 @@ ssh <username>@hostname
 sudo -i
 ```
 
-CD to the src directory
+Exec into the docker container and cd to the src directory
 ```
 ┌──(root💀kali)-[~]
 └─# docker exec -it hassio_supervisor /bin/bash
