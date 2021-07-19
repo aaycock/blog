@@ -5,7 +5,7 @@ categories: [pi, wifi]
 tags: [pi, wifi]
 ---
 
-Enabling DPSK on a Raspberry Pi with hostapd required a little more work and troubleshooting that I expected.
+Enabling DPSK on a Raspberry Pi with hostapd required a little more work and troubleshooting than I expected.
 
 The good news is that if you follow the steps in my post on [enabling RADIUS-based MAC auth][mac-auth], you will be 95% done with the work needed, unless you need to micro-segment [traffic on individual VLANs][dvlan]. 
 
