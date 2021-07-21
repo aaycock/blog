@@ -56,7 +56,7 @@ Files that you'll need to modify:
 ```
 
 ``` python
-# supervisor/dbus/const.py (line 266)
+# supervisor/host/network.py (line 266)
     # Modify
     if inet.settings
     and inet.settings.ipv4
@@ -65,7 +65,7 @@ Files that you'll need to modify:
 ```
 
 ``` python
-# supervisor/dbus/const.py (line 294)
+# supervisor/host/network.py (line 294)
     # Modify
     if inet.settings
     and inet.settings.ipv6
@@ -74,7 +74,7 @@ Files that you'll need to modify:
 ```
 
 ``` python
-# supervisor/dbus/const.py (line 334)
+# supervisor/host/network.py (line 334)
   DeviceType.ETHERNET: InterfaceType.ETHERNET,
   DeviceType.WIRELESS: InterfaceType.WIRELESS,
   DeviceType.VLAN: InterfaceType.VLAN,
