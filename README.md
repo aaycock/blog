@@ -125,7 +125,8 @@ Main configuration is in `_config.yml`. Key settings:
 
 ## Theme
 
-This blog uses the Jekyll-Uno theme, a minimal responsive theme based on the Uno theme for Ghost.
+This blog uses the Jekyll-Uno theme, a minimal responsive theme based on the Uno theme for Ghost. 
+Bump.
 
 ## License
 
